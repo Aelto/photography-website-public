@@ -1,0 +1,23 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo {
+  /* width: 300px; */
+  display: inline-block;
+  background: white;
+  margin: 1em;
+  box-shadow: 0 4px 6px rgba(20, 20, 20, .2);
+}
+
+.photo form {
+  width: 100%;
+}
+
+.photo img {
+  max-width: 300px;
+}
+
+input + input {
+  display: inline-block;
+}

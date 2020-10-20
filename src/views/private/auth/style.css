@@ -1,0 +1,16 @@
+html, body {
+  background: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.forms-container {
+  display: flex;
+  justify-content: center;
+}
+
+.forms-container .form + .form {
+  margin-left: 4em;
+}

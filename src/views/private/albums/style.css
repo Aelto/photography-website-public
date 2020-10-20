@@ -1,0 +1,92 @@
+body, html {
+  margin: 0;
+  background: white;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: rgb(45, 45, 45);
+}
+
+.album-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  padding-top: 1em;
+  flex-grow: 1;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background: white;
+  box-shadow: 0 6px 12px -8px rgba(20, 20, 20, .2);
+  padding: 1em;
+}
+.album + .album {
+  margin-top: 1em;
+}
+
+
+.album input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+.album .id {
+  font-size: .7em;
+  opacity: .8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.album .name {
+  border-bottom: solid 1px #E1E1E1;
+  font-family: inherit;
+  font-size: 1.5em;
+}
+
+.album .description {
+  margin-top: .5em;
+  font-size: 1em;
+  display: block;
+  opacity: .95;
+}
+
+.album .private {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.album .private input {
+  margin: 1px;
+}
+
+.album .order {
+  max-width: 2.5em;
+  margin-left: auto;
+  text-align: right;
+  background: whitesmoke;
+}
+
+.album .buttons {
+  margin-top: .6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.album .add-image-row {
+  margin: .6em;
+  padding: .4em;
+  border: solid 3px currentColor;
+}
+
+
+.album .album-pictures img {
+  max-width: 100%;
+}

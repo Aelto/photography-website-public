@@ -1,0 +1,31 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  background: rgb(252, 252, 252);
+}
+
+h1 {
+  font-weight: 100;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 2em
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(24, 24, 24);
+}
+
+nav a + a {
+  margin-left: 3em;
+}

@@ -1,0 +1,53 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10em 0;
+}
+
+.columns .column + .column {
+  margin-left: 24px;
+}
+
+.columns .column .album + .album {
+  margin-top: 24px;
+}
+
+.album {
+  border: solid 2px black;
+  padding: .8em;
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+  width: 450px;
+  max-width: 100vw;
+  display: block;
+}
+
+.album .cover {
+  max-width: 100%;
+  display: block;
+}
+
+.album .name {
+  font-size: 1.6em;
+}
+
+.album .description {
+  font-size: 1em;
+}
+
+.album .private {
+  display: block;
+  text-align: right;
+  font-size: .8em;
+  opacity: .9;
+  font-style: italic;
+}
