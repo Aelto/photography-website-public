@@ -14,3 +14,5 @@ This repository contains the ReactJS front-end code used by my photography websi
 The website uses React JS in the front-end with one app per route because the website was created to host large images (30megabytes per file) and thus needed to dynamically adapt the design to any viewport size. This way each page code is stored in NGINX's cache and also the user browser's cache to avoid wasting mobile data and bandwidth. Then the front-end loads the corresponding file (thumbnail/full image) depending on the page & preferences.
 
 The website also has support for private pictures and albums, it has an administrator page where i can upload pictures, add them to any album and even create invitations for friends who want to see the albums. All this without reloads.
+
+I also chose to avoid using JSX with a transpiler because i wanted to dynamically toggle a page between its production & development version. And i said earlier because there is some SSR happening too, which would have been tedious with the JSX transpiled code.
