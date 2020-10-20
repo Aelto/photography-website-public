@@ -13,4 +13,4 @@ This repository contains the ReactJS front-end code used by my photography websi
 # Why is it made this way?
 The website uses React JS in the front-end with one app per route because the website was created to host large images (30megabytes per file) and thus needed to dynamically adapt the design to any viewport size. This way each page code is stored in NGINX's cache and also the user browser's cache to avoid wasting mobile data and bandwidth. Then the front-end loads the corresponding file (thumbnail/full image) depending on the page & preferences.
 
-The website also has support for private pictures and albums, and thus needs an administrator page where i can upload pictures, add them to any album and even create invitations for friends who want to see the albums. All this without reloads.
+The website also has support for private pictures and albums, it has an administrator page where i can upload pictures, add them to any album and even create invitations for friends who want to see the albums. All this without reloads.
